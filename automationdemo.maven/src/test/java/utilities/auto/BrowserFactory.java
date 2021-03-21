@@ -17,6 +17,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import config.PropertiesFile;
+
 /**
  * @author JoshZhuang
  *
@@ -43,17 +45,22 @@ public class BrowserFactory {
 	
 	//create webdriver instance locally depending on browser
 	public static WebDriver createBrowserInstance(String browserName) {
+		
 		if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver(); //launch firefox
 		}
 		
+		
 		else if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", PropertiesFile.getPropValue("chromepath")); //get chromedriver.exe info from config.properties file
 			driver = new ChromeDriver(); //launch chrome
 		}
 		
+		
 		else if (browserName.equalsIgnoreCase("edge")) {
-			System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
+//			System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", PropertiesFile.getPropValue("edgepath")); //get msedgedriver.exe info from config.properties file
 			driver = new EdgeDriver(); //launch edge
 		}
 			

@@ -37,7 +37,7 @@ public class DebuggingWIP {
 	WebDriver ldriver;
 	String reportfolder = "Lookatests";
 	String testcasename = "Lookatests";
-	String browsername = "chrome";
+	String browsername = "edge";
 	String url = "https://www.looka.com/";
 	
 
@@ -80,7 +80,7 @@ public class DebuggingWIP {
 		
 		ldriver.manage().window().maximize(); //maximise window
 		ldriver.get(url); //navigate to *url*	
-	//	Assert.fail("END of testing#$D");
+		Assert.fail("END of testing#$D");
 		//init LoginPage
 		LoginPage loginpage = PageFactory.initElements(ldriver, LoginPage.class);	
 		//init dashboard page
