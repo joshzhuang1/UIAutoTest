@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HappyCo Suite]" parallel="tests">
+  <test thread-count="5" name="EdgeTest(failed)" parallel="tests">
+    <parameter name="datapath" value="testdata/pricetounit.xlsx"/>
+    <parameter name="selectedbrowser" value="edge"/>
+    <parameter name="testcasename" value="Pricing Validation - edge"/>
+    <parameter name="startingurl" value="https://happy.co"/>
+    <parameter name="seleniumhub" value="http://localhost:4546/wd/hub"/>
+    <classes>
+      <class name="co.happy.testcases.PricingValidation">
+        <methods>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+          <include name="initExtentReport"/>
+          <include name="verifyHPPricing"/>
+        </methods>
+      </class> <!-- co.happy.testcases.PricingValidation -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [HappyCo Suite] -->

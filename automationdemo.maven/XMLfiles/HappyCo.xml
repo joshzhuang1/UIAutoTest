@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HappyCo Suite" parallel = "tests" thread-count = "5">
+      
+  
+  <test name="ChromeTest">  
+	  <parameter name="selectedbrowser" value="chrome" />    
+	  <parameter name="testcasename" value="Pricing Validation - Chrome" />		 
+	  <parameter name="startingurl" value="https://happy.co" />
+	  <parameter name="datapath" value="testdata/pricetounitREF.xlsx" />
+	  <parameter name="seleniumhub" value="http://localhost:4546/wd/hub" />
+	  <classes> 
+		  <class name="co.happy.testcases.PricingValidation">               
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+    
+    
+  <test name="FireFoxTest">  
+	  <parameter name="selectedbrowser" value="firefox" />    
+	  <parameter name="testcasename" value="Pricing Validation - firefox" />		 
+	  <parameter name="startingurl" value="https://happy.co" />	
+  	  <parameter name="datapath" value="testdata/pricetounitREF.xlsx" />
+	  <parameter name="seleniumhub" value="http://localhost:4546/wd/hub" />
+	  <classes> 
+		  <class name="co.happy.testcases.PricingValidation">               
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="EdgeTest">  
+	  <parameter name="selectedbrowser" value="edge" />    
+	  <parameter name="testcasename" value="Pricing Validation - edge" />		 
+	  <parameter name="startingurl" value="https://happy.co" />
+  	  <parameter name="datapath" value="testdata/pricetounitREF.xlsx" />		
+	  <parameter name="seleniumhub" value="http://localhost:4546/wd/hub" />
+	  <classes> 
+		  <class name="co.happy.testcases.PricingValidation">              
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

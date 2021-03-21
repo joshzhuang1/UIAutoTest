@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="HappyCo Suite" duration-ms="37973" started-at="2021-03-14T03:55:03Z" finished-at="2021-03-14T03:55:41Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="35518" started-at="2021-03-14T03:55:03Z" finished-at="2021-03-14T03:55:38Z">
+      <class name="co.happy.testcases.PricingValidation">
+        <test-method status="PASS" signature="initExtentReport(java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@67a20f67]" name="initExtentReport" is-config="true" duration-ms="322" started-at="2021-03-14T03:55:03Z" finished-at="2021-03-14T03:55:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pricing Validation - Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initExtentReport -->
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@67a20f67]" name="launchApp" is-config="true" duration-ms="9804" started-at="2021-03-14T03:55:03Z" depends-on-methods="co.happy.testcases.PricingValidation.initExtentReport" finished-at="2021-03-14T03:55:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://happy.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4546/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="verifyHPPricing(java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@67a20f67]" name="verifyHPPricing" duration-ms="25005" started-at="2021-03-14T03:55:13Z" finished-at="2021-03-14T03:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testdata/pricetounitREF.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHPPricing -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:co.happy.testcases.PricingValidation@67a20f67]" name="closeApp" is-config="true" duration-ms="371" started-at="2021-03-14T03:55:38Z" finished-at="2021-03-14T03:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- co.happy.testcases.PricingValidation -->
+    </test> <!-- ChromeTest -->
+    <test name="EdgeTest" duration-ms="35518" started-at="2021-03-14T03:55:03Z" finished-at="2021-03-14T03:55:38Z">
+      <class name="co.happy.testcases.PricingValidation">
+        <test-method status="PASS" signature="initExtentReport(java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@647e447]" name="initExtentReport" is-config="true" duration-ms="322" started-at="2021-03-14T03:55:03Z" finished-at="2021-03-14T03:55:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pricing Validation - edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initExtentReport -->
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@647e447]" name="launchApp" is-config="true" duration-ms="7453" started-at="2021-03-14T03:55:03Z" depends-on-methods="co.happy.testcases.PricingValidation.initExtentReport" finished-at="2021-03-14T03:55:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://happy.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4546/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="FAIL" signature="verifyHPPricing(java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@647e447]" name="verifyHPPricing" duration-ms="26571" started-at="2021-03-14T03:55:11Z" finished-at="2021-03-14T03:55:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Set test result to FAIL due to failed steps]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Set test result to FAIL due to failed steps
+at org.testng.Assert.fail(Assert.java:96)
+at utilities.auto.TestNGListener.onTestSuccess(TestNGListener.java:55)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)
+at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHPPricing -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:co.happy.testcases.PricingValidation@647e447]" name="closeApp" is-config="true" duration-ms="1151" started-at="2021-03-14T03:55:37Z" finished-at="2021-03-14T03:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- co.happy.testcases.PricingValidation -->
+    </test> <!-- EdgeTest -->
+    <test name="FireFoxTest" duration-ms="37973" started-at="2021-03-14T03:55:03Z" finished-at="2021-03-14T03:55:41Z">
+      <class name="co.happy.testcases.PricingValidation">
+        <test-method status="PASS" signature="initExtentReport(java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@1cbbffcd]" name="initExtentReport" is-config="true" duration-ms="322" started-at="2021-03-14T03:55:03Z" finished-at="2021-03-14T03:55:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pricing Validation - firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initExtentReport -->
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@1cbbffcd]" name="launchApp" is-config="true" duration-ms="10510" started-at="2021-03-14T03:55:03Z" depends-on-methods="co.happy.testcases.PricingValidation.initExtentReport" finished-at="2021-03-14T03:55:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://happy.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4546/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="verifyHPPricing(java.lang.String)[pri:0, instance:co.happy.testcases.PricingValidation@1cbbffcd]" name="verifyHPPricing" duration-ms="26453" started-at="2021-03-14T03:55:14Z" finished-at="2021-03-14T03:55:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testdata/pricetounitREF.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHPPricing -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:co.happy.testcases.PricingValidation@1cbbffcd]" name="closeApp" is-config="true" duration-ms="674" started-at="2021-03-14T03:55:40Z" finished-at="2021-03-14T03:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- co.happy.testcases.PricingValidation -->
+    </test> <!-- FireFoxTest -->
+  </suite> <!-- HappyCo Suite -->
+</testng-results>

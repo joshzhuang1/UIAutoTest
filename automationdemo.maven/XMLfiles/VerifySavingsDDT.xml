@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "none" thread-count = "2">
+      
+  
+  <test name="ChromeTest">  
+	  <parameter name="selectedbrowser" value="chrome" />    
+	  <parameter name="testcasename" value="Verify Loan Calc - Chrome" />		 
+	  <parameter name="startingurl" value="https://tictoc.com.au/" />
+	  <classes> 
+		  <class name="com.tictoc.testcases.VerifySavingsDDT">               
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+    
+    
+  <test name="EdgeTest">  
+	  <parameter name="selectedbrowser" value="Edge" />    
+	  <parameter name="testcasename" value="Verify Loan Calc - Edge" />		 
+	  <parameter name="startingurl" value="https://tictoc.com.au/" />	
+	  <classes> 
+		  <class name="com.tictoc.testcases.VerifySavingsDDT">               
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

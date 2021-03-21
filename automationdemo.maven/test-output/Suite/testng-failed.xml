@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="EdgeTest(failed)" parallel="tests">
+    <parameter name="selectedbrowser" value="edge"/>
+    <parameter name="testcasename" value="Verify Loan Calc - edge"/>
+    <parameter name="startingurl" value="https://tictoc.com.au/"/>
+    <parameter name="seleniumhub" value="http://localhost:4546/wd/hub"/>
+    <classes>
+      <class name="com.tictoc.testcases.VerifySavingsDDTonGrid">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+          <include name="VerifyRefiSavings"/>
+        </methods>
+      </class> <!-- com.tictoc.testcases.VerifySavingsDDTonGrid -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="5" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="selectedbrowser" value="chrome"/>
+    <parameter name="testcasename" value="Verify Loan Calc - Chrome"/>
+    <parameter name="startingurl" value="https://tictoc.com.au/"/>
+    <parameter name="seleniumhub" value="http://localhost:4546/wd/hub"/>
+    <classes>
+      <class name="com.tictoc.testcases.VerifySavingsDDTonGrid">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+          <include name="VerifyRefiSavings"/>
+        </methods>
+      </class> <!-- com.tictoc.testcases.VerifySavingsDDTonGrid -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FireFoxTest(failed)" parallel="tests">
+    <parameter name="selectedbrowser" value="firefox"/>
+    <parameter name="testcasename" value="Verify Loan Calc - firefox"/>
+    <parameter name="startingurl" value="https://tictoc.com.au/"/>
+    <parameter name="seleniumhub" value="http://localhost:4546/wd/hub"/>
+    <classes>
+      <class name="com.tictoc.testcases.VerifySavingsDDTonGrid">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+          <include name="VerifyRefiSavings"/>
+        </methods>
+      </class> <!-- com.tictoc.testcases.VerifySavingsDDTonGrid -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

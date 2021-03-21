@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -jar C:\Users\hoshi\myWork\Installer\jenkins.war --httpPort=8084

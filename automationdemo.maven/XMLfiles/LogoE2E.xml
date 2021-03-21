@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Logo E2E Suite" parallel = "tests" thread-count = "5">
+      
+  
+  <test name="ChromeTest">  
+	  <parameter name="selectedbrowser" value="chrome" />    
+	  <parameter name="testcasename" value="Logo E2E - Chrome" />		 
+	  <parameter name="startingurl" value="https://www.looka.com/" />
+	  <parameter name="seleniumhub" value="http://localhost:4546/wd/hub" />
+	  <parameter name="username" value="joshzhuangdemo@gmail.com" />
+	  <parameter name="password" value="K!e9R#cj4KRXQ7w" />
+	  <classes> 
+		  <class name="com.looka.testcases.LogoManagement">               
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+    
+    
+  <test name="FireFoxTest">  
+	  <parameter name="selectedbrowser" value="firefox" />    
+	  <parameter name="testcasename" value="Logo E2E - firefox" />		 
+	  <parameter name="startingurl" value="https://www.looka.com/" />	
+	  <parameter name="seleniumhub" value="http://localhost:4546/wd/hub" />
+	  <parameter name="username" value="DoesntExist@gmail.com" />
+	  <parameter name="password" value="AAAABBBBDDDD" />
+	  <classes> 
+		  <class name="com.looka.testcases.LogoManagement">               
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+  
+  
+    <test name="EdgeTest">  
+	  <parameter name="selectedbrowser" value="edge" />    
+	  <parameter name="testcasename" value="Logo E2E - edge" />		 
+	  <parameter name="startingurl" value="https://www.looka.com/" />		
+	  <parameter name="seleniumhub" value="http://localhost:4546/wd/hub" />
+	  <parameter name="username" value="joshzhuangdemo+01@gmail.com" />
+	  <parameter name="password" value="@.cyK2JxcgwN9_9" />
+	  <classes> 
+		  <class name="com.looka.testcases.LogoManagement">              
+		<!--  	<methods> <include name="verifylogger" /> </methods> -->
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

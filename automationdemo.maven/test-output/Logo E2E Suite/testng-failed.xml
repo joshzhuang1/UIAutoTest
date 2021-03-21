@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Logo E2E Suite]" parallel="tests">
+  <test thread-count="5" name="FireFoxTest(failed)" parallel="tests">
+    <parameter name="selectedbrowser" value="firefox"/>
+    <parameter name="testcasename" value="Logo E2E - firefox"/>
+    <parameter name="startingurl" value="https://www.looka.com/"/>
+    <parameter name="seleniumhub" value="http://localhost:4546/wd/hub"/>
+    <classes>
+      <class name="com.looka.testcases.LogoManagement">
+        <methods>
+          <include name="deleteLogo" invocation-numbers="0 1 2"/>
+          <include name="logoff"/>
+          <include name="launchApp"/>
+          <include name="initExtentReport"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- com.looka.testcases.LogoManagement -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+</suite> <!-- Failed suite [Logo E2E Suite] -->
