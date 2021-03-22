@@ -152,7 +152,8 @@ public final class ExtentLogger {
 		}
 		
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir")+"/testreports/_Screenshots/"+imgname;
+//		String path = System.getProperty("user.dir")+"/testreports/_Screenshots/"+imgname;
+		String path = "/job/_TicTocDockerGrid/ws/automationdemo.maven/testreports/_Screenshots/"+imgname;
 //		String path = imgname; 
 		FileUtils.copyFile(source, new File(path));
 		return path;				
